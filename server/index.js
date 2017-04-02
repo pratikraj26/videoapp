@@ -65,3 +65,4 @@ var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 app.listen(port, ip, function () {
     console.log( "Listening on " + ip + ", server_port " + port  );
 });
+module.exports = app;
