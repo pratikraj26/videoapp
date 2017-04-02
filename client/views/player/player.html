@@ -1,0 +1,34 @@
+<div class="film-container">
+  <h1> {{film.title}} </h1>
+  <section class="ng-video-container">
+    <section class="video" ng-video>
+      <video vi-screen></video>
+      <section class="timeline">
+        <input vi-timeline />
+      </section>
+      <section vi-controls class="controls">
+        <span vi-controls-play title="Play" class="glyphicon glyphicon-play"></span>
+        <span vi-controls-pause title="Pause" class="glyphicon glyphicon-pause"></span>
+      </section>
+      <section class="full-screen">
+        <span title="Full Screen" vi-full-screen-toggle class="glyphicon glyphicon-fullscreen"></span>
+      </section>
+    </section>
+  </section>
+  <div class="film-info">
+    <p class="film-categories">
+      <strong class="extra-info-heading">Categories: </strong>
+      <span ng-repeat="category in film.categories">{{category.title + ''}}</span>
+    </p>
+    <div class="extra-info">
+      <div class="film-synopsis">
+        <p class="extra-info-heading">Synopsis</p>
+        <div class="film-synopsis-inner">{{film.description}}</div>
+      </div>
+      <div class="film-credits">
+        <p class="extra-info-heading">Credits</p>
+        <div ng-repeat="credit in film.credits">{{credit.role}} : {{credit.name}}</div>
+      </div>
+    </div>
+  </div>
+</div>

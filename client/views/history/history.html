@@ -1,0 +1,6 @@
+<div class="video-slider">
+  <ul ng-repeat ="slide in slides track by slide.id">
+    <img ng-src="{{slide.images[0].url}}" ng-click="playmovie(slide, $index)"/>
+    <li><h4>{{slide.title}}</h4></li>
+  </ul>
+</div>

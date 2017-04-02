@@ -1,0 +1,29 @@
+{
+  "name": "videoapp",
+  "version": "1.0.0",
+  "description": "Media App VOD",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaivi-v/videoapp.git"
+  },
+  "author": "Shaivi Vashistha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaivi-v/videoapp/issues"
+  },
+  "homepage": "https://github.com/shaivi-v/videoapp#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-ui-carousel": "^0.1.6",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "ng-video": "^1.0.3"
+  }
+}

@@ -1,0 +1,242 @@
+.video-slider {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.video-slider li {
+  list-style: none;
+}
+
+.ui-carousel .carousel-next .carousel-btn {
+  right: 8px;
+}
+.ui-carousel .carousel-prev .carousel-btn {
+  left: 10px;
+}
+
+.carousel-item {
+  margin-top: 40px;
+}
+
+img:hover {
+  border: 2px solid #428bca;
+}
+
+nav {
+  height: 50px;
+  padding-top: 10px;
+  background-color: grey;
+}
+
+nav a:nth-child(1) {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+nav a:nth-child(2){
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+#slides_control > div{
+  height: 200px;
+}
+#slides_control img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+  margin-left:-200px;
+}
+
+.film-info {
+  margin-top: 10px;
+}
+
+.film-container {
+  margin: auto;
+  width: 700px;
+  padding-bottom: 30px;
+}
+
+.film-container h1{
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.film-categories span {
+  margin-right: 4px;
+  text-transform: uppercase;
+}
+
+.film-synopsis {
+  width: 50%;
+  display: inline-block;
+  vertical-align: inherit;
+}
+
+.film-synopsis .film-synopsis-inner {
+  margin-right: .5em;
+}
+
+.film-credits {
+  width: 50%;
+  display: inline-block;
+  vertical-align: inherit;
+}
+.film-credits .credits-inner {
+  margin-left: .5em;
+}
+
+.film-credits .credits-heading {
+  color: #fff;
+  font-size: 1.8em;
+  font-family: Lato;
+  font-weight: 700;
+  margin: 0 0 .25em;
+}
+
+.theme {
+  background: lightgray;
+}
+
+.extra-info {
+  display: flex;
+}
+
+.extra-info-heading {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Video */
+section.ng-video-container {
+  width: 100%;
+  height: 395px;
+  margin: 20px auto auto auto;
+}
+
+
+section.video {
+  text-align: left;
+  padding: 5px;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+  border: 1px solid lightgray;
+}
+
+section.video section.loading {
+  position: absolute;
+  top: 39px;
+  left: 5px;
+  width: 538px;
+  height: 260px;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
+  font-size: 12px;
+  pointer-events: all;
+  z-index: 201;
+  padding: 13px 0 0 40px;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+section.video video {
+  background-color: rgba(0, 0, 0, .25);
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+section.video section.controls {
+  z-index: 5;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -48px;
+  left: 5px;
+  display: flex;
+  margin-left: 4px;
+  width: 100px;
+}
+
+section.video section.controls span {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  line-height: 48px;
+  padding-left: 2px;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  transition: background-color .35s;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+section.video section.controls span:hover {
+  background-color: rgba(255, 255, 255, .25);
+}
+
+section.video section.full-screen {
+  top: 10px;
+  position: absolute;
+  left: 6px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+section.video section.timeline {
+    position: absolute;
+    width: 485px;
+    width: calc(100% - 60px);
+    left: 30px;
+    bottom: 32px;
+}
+
+section.video section.timeline input {
+    width: 100%;
+    pointer-events: all;
+    appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    outline: none;
+    height: 12px;
+    border-bottom: 3px solid rgba(0, 0, 0, .25);
+}
+
+section.video section.timeline input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    outline: none;
+    height: 15px;
+    width: 45px;
+}
+
+section.video section.timeline input::-moz-range-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    outline: none;
+    height: 15px;
+    width: 45px;
+}
