@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app='videoApp'>
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="node_modules/angular-ui-carousel/dist/ui-carousel.css"/>
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-ui-carousel/dist/ui-carousel.js"></script>
+  <script src="node_modules/ng-video/dist/ng-video.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services/moviesService.js"></script>
+  <script src="js/controllers/headerController.js"></script>
+  <script src="js/controllers/landingController.js"></script>
+  <script src="js/controllers/playerController.js"></script>
+  <script src="js/controllers/historyController.js"></script>
+</head>
+<body class="theme">
+
+  <nav ng-controller='headerController'>
+    <a class="nav-item-1" ng-click="goHome()"> {{navitem1}}</a>
+    <a class="nav-item-2" ng-click="getMoviesHistory()"> {{navitem2}} </a>
+  </nav>
+
+  <div ng-view></div>
+
+</body>
+</html>
